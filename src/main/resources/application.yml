@@ -1,0 +1,25 @@
+server:
+  port: 9090
+
+#spring.datasource.url
+#spring.datasource.username
+#spring.datasource.password
+#spring.datasource.driver-class-name
+
+spring:
+  main:
+    allow-circular-references: true
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/DBRANDEVU"
+    username: "postgres"
+    password: "tmtmtm13"
+    driver-class-name: "org.postgresql.Driver"
+  jpa:
+    hibernate:
+      ddl-auto: update # create update h?bernate ile ayn?
+    show-sql: true
+
+myapplication:
+  name: "Randevu Sistemi"
+  version: "1.0.0"
+  description: "Randevu Sistemi"
